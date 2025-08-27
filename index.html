@@ -4,11 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Hotline</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body class="hind-madurai-font">
-    <header>
-      <h1>its a nav bar</h1>
+    <header class="w-[1280px] mx-auto">
+      <nav class="bg-[#ffffff] flex justify-between items-center px-10 py-2">
+        <div class="flex justify-center items-center">
+          <div class="h-12 w-12">
+            <img src="./assets/logo.png" alt="" />
+          </div>
+          <div class="ml-2">
+            <h2 class="font-bold text-lg text-[#006747]">
+              Emergency <br />
+              Service
+            </h2>
+          </div>
+        </div>
+        <div>
+          <button class="btn rounded-3xl px-7 text-black">
+            <span>0</span
+            ><img class="w-5 h-5" src="./assets/heart.png" alt="" />
+          </button>
+          <button class="btn items-center text-black rounded-3xl ml-2">
+            <span>100</span
+            ><img class="w-5 h-5" src="./assets/coin.png" alt="" />
+          </button>
+          <button class="btn bg-[#00a63e] text-white rounded-3xl px-8 ml-2">
+            <span>2</span>copy
+          </button>
+        </div>
+      </nav>
     </header>
     <main></main>
   </body>
