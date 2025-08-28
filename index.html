@@ -36,15 +36,17 @@
         </div>
         <div>
           <button class="btn rounded-3xl px-7 text-black">
-            <span>0</span
+            <span id="heart-counter">0</span
             ><img class="w-5 h-5" src="./assets/heart.png" alt="" />
           </button>
           <button class="btn items-center text-black rounded-3xl ml-2">
-            <span>100</span
+            <span id="coin-balance" class="coins">100</span
             ><img class="w-5 h-5" src="./assets/coin.png" alt="" />
           </button>
-          <button class="btn bg-[#00a63e] text-white rounded-3xl px-8 ml-2">
-            <span>2</span>copy
+          <button
+            class="btn-copy btn bg-[#00a63e] text-white rounded-3xl px-8 ml-2"
+          >
+            <span>0</span>copy
           </button>
         </div>
       </nav>
@@ -73,7 +75,7 @@
       <!-- card area -->
       <section
         id="emergency-container"
-        class="w-[1270px] mx-auto py-12 grid md:grid-cols-12 gap-10"
+        class="w-[1270px] mx-auto py-12 grid md:grid-cols-12 gap-4"
       >
         <section id="emergency-number" class="col-span-9">
           <div
@@ -90,11 +92,13 @@
                 <i class="fa-regular fa-heart"></i>
               </div>
               <div>
-                <h1 class="font-bold text-lg mt-4">
+                <h1 id="card-title-1" class="card-title font-bold text-lg mt-4">
                   National Emergency Number
                 </h1>
                 <p class="text-[#006747]">National Emergency</p>
-                <p class="font-bold text-lg mt-5"><span>999</span></p>
+                <p class="font-bold text-lg mt-5">
+                  <span id="phone-number-1" class="phone-number">999</span>
+                </p>
                 <p>
                   <button class="btn btn-active rounded-2xl text-[#006747]">
                     All
@@ -107,7 +111,8 @@
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    class="btn call-btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    id="call-btn-1"
                   >
                     <i
                       class="fa-solid fa-phone items-center text-lg font-normal text-white"
@@ -129,9 +134,13 @@
                 <i class="fa-regular fa-heart"></i>
               </div>
               <div>
-                <h1 class="font-bold text-lg mt-4">Police Help Number</h1>
+                <h1 id="card-title-1" class="card-title font-bold text-lg mt-4">
+                  Police Helpline Number
+                </h1>
                 <p class="text-[#006747]">Police</p>
-                <p class="font-bold text-lg mt-5"><span>999</span></p>
+                <p class="font-bold text-lg mt-5">
+                  <span id="phone-number-1" class="phone-number">999</span>
+                </p>
                 <p>
                   <button class="btn btn-active rounded-2xl text-[#006747]">
                     Police
@@ -144,7 +153,8 @@
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    class="btn call-btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    id="call-btn-1"
                   >
                     <i
                       class="fa-solid fa-phone items-center text-lg font-normal text-white"
@@ -170,9 +180,13 @@
                 <i class="fa-regular fa-heart"></i>
               </div>
               <div>
-                <h1 class="font-bold text-lg mt-4">Fire Service Number</h1>
+                <h1 id="card-title-1" class="card-title font-bold text-lg mt-4">
+                  Fire Service Number
+                </h1>
                 <p class="text-[#006747]">Fire Service</p>
-                <p class="font-bold text-lg mt-5"><span>999</span></p>
+                <p class="font-bold text-lg mt-5">
+                  <span id="phone-number-1" class="phone-number">999</span>
+                </p>
                 <p>
                   <button class="btn btn-active rounded-2xl text-[#006747]">
                     Fire
@@ -185,7 +199,8 @@
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    class="btn call-btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    id="call-btn-1"
                   >
                     <i
                       class="fa-solid fa-phone items-center text-lg font-normal text-white"
@@ -207,9 +222,15 @@
                 <i class="fa-regular fa-heart"></i>
               </div>
               <div>
-                <h1 class="font-bold text-lg mt-4">Ambulance Service</h1>
+                <h1 id="card-title-1" class="card-title font-bold text-lg mt-4">
+                  Ambulance Service
+                </h1>
                 <p class="text-[#006747]">Ambulance</p>
-                <p class="font-bold text-lg mt-5"><span>1994-999999</span></p>
+                <p class="font-bold text-lg mt-5">
+                  <span id="phone-number-1" class="phone-number"
+                    >1994-999999</span
+                  >
+                </p>
                 <p>
                   <button class="btn btn-active rounded-2xl text-[#006747]">
                     Health
@@ -222,7 +243,8 @@
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    class="btn call-btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    id="call-btn-1"
                   >
                     <i
                       class="fa-solid fa-phone items-center text-lg font-normal text-white"
@@ -244,9 +266,13 @@
                 <i class="fa-regular fa-heart"></i>
               </div>
               <div>
-                <h1 class="font-bold text-lg mt-4">Women & Child Helpline</h1>
+                <h1 id="card-title-1" class="card-title font-bold text-lg mt-4">
+                  Women & Child Helpline
+                </h1>
                 <p class="text-[#006747]">Women & Child Helpline</p>
-                <p class="font-bold text-lg mt-5"><span>109</span></p>
+                <p class="font-bold text-lg mt-5">
+                  <span id="phone-number-1" class="phone-number">109</span>
+                </p>
                 <p>
                   <button class="btn btn-active rounded-2xl text-[#006747]">
                     Help
@@ -259,7 +285,8 @@
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    class="btn call-btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    id="call-btn-1"
                   >
                     <i
                       class="fa-solid fa-phone items-center text-lg font-normal text-white"
@@ -281,9 +308,13 @@
                 <i class="fa-regular fa-heart"></i>
               </div>
               <div>
-                <h1 class="font-bold text-lg mt-4">Anti-Corruption Helpline</h1>
+                <h1 id="card-title-1" class="card-title font-bold text-lg mt-4">
+                  Anti-Corruption Helpline
+                </h1>
                 <p class="text-[#006747]">Anti-Corruption</p>
-                <p class="font-bold text-lg mt-5"><span>106</span></p>
+                <p class="font-bold text-lg mt-5">
+                  <span id="phone-number-1" class="phone-number">106</span>
+                </p>
                 <p>
                   <button class="btn btn-active rounded-2xl text-[#006747]">
                     Govt.
@@ -296,7 +327,8 @@
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    class="btn call-btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    id="call-btn-1"
                   >
                     <i
                       class="fa-solid fa-phone items-center text-lg font-normal text-white"
@@ -318,9 +350,13 @@
                 <i class="fa-regular fa-heart"></i>
               </div>
               <div>
-                <h1 class="font-bold text-lg mt-4">Electricity Helpline</h1>
+                <h1 id="card-title-1" class="card-title font-bold text-lg mt-4">
+                  Electricity Helpline
+                </h1>
                 <p class="text-[#006747]">Electricity Outage</p>
-                <p class="font-bold text-lg mt-5"><span>16216</span></p>
+                <p class="font-bold text-lg mt-5">
+                  <span id="phone-number-1" class="phone-number">16216</span>
+                </p>
                 <p>
                   <button class="btn btn-active rounded-2xl text-[#006747]">
                     Electricity
@@ -333,7 +369,8 @@
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    class="btn call-btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    id="call-btn-1"
                   >
                     <i
                       class="fa-solid fa-phone items-center text-lg font-normal text-white"
@@ -349,15 +386,19 @@
               <div class="flex justify-between items-center">
                 <p>
                   <button class="btn btn-active p-2 rounded-xl">
-                    <img class="h-6 w-6" src="./assets/emergency.png" alt="" />
+                    <img class="h-6 w-6" src="./assets/brac.png" alt="" />
                   </button>
                 </p>
                 <i class="fa-regular fa-heart"></i>
               </div>
               <div>
-                <h1 class="font-bold text-lg mt-4">Brac Helpline</h1>
+                <h1 id="card-title-1" class="card-title font-bold text-lg mt-4">
+                  Brac Helpline
+                </h1>
                 <p class="text-[#006747]">Brac</p>
-                <p class="font-bold text-lg mt-5"><span>16445</span></p>
+                <p class="font-bold text-lg mt-5">
+                  <span id="phone-number-1" class="phone-number">16445</span>
+                </p>
                 <p>
                   <button class="btn btn-active rounded-2xl text-[#006747]">
                     NGO
@@ -370,7 +411,8 @@
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    class="btn call-btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    id="call-btn-1"
                   >
                     <i
                       class="fa-solid fa-phone items-center text-lg font-normal text-white"
@@ -386,17 +428,23 @@
               <div class="flex justify-between items-center">
                 <p>
                   <button class="btn btn-active p-2 rounded-xl">
-                    <img class="h-6 w-6" src="./assets/emergency.png" alt="" />
+                    <img
+                      class="h-6 w-6"
+                      src="./assets/Bangladesh-Railway.png"
+                      alt=""
+                    />
                   </button>
                 </p>
                 <i class="fa-regular fa-heart"></i>
               </div>
               <div>
-                <h1 class="font-bold text-lg mt-4">
+                <h1 id="card-title-1" class="card-title font-bold text-lg mt-4">
                   Bangladesh Railway Helpline
                 </h1>
                 <p class="text-[#006747]">Bangladesh Railway</p>
-                <p class="font-bold text-lg mt-5"><span>163</span></p>
+                <p class="font-bold text-lg mt-5">
+                  <span id="phone-number-1" class="phone-number">163</span>
+                </p>
                 <p>
                   <button class="btn btn-active rounded-2xl text-[#006747]">
                     Travel
@@ -409,7 +457,8 @@
                     <i class="fa-regular fa-copy"></i>Copy
                   </button>
                   <button
-                    class="btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    class="btn call-btn mt-5 w-[50%] text-white text-lg font-normal bg-[#00a63e] rounded-lg"
+                    id="call-btn-1"
                   >
                     <i
                       class="fa-solid fa-phone items-center text-lg font-normal text-white"
@@ -430,12 +479,13 @@
               <i class="fa-regular fa-clock mr-2"></i>Call History
             </h1>
             <button
-              class="btn text-white px-7 text-sm font-normal bg-[#00a63e] rounded-3xl"
+              class="btn text-white px-7 text-sm font-normal bg-[#00a63e] rounded-3xl py-3"
+              id="clear-history"
             >
               Clear
             </button>
           </div>
-          <div id="history-container"></div>
+          <div id="history-container" class="py-3"></div>
         </aside>
       </section>
     </main>
