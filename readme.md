@@ -73,7 +73,6 @@ This will add a new <p> inside the #container.
 
 3. Event Bubbling is a mechanism in the DOM where an event starts from the target element (the element that was actually clicked) and then bubbles up (propagates) through its parent elements, all the way up to the document object.
 
-   For example:
    If you click on a <button> inside a <div>, the event is first handled by the <button>, then moves to the <div>, then to <body>, and finally to <html> and document.
 
 So, the event goes from the innermost element → outer elements.
@@ -95,8 +94,6 @@ Performance optimization – Instead of attaching many listeners, you only use o
 Dynamic elements handling – Works even if new child elements are added later.
 
 Cleaner code – Easier to manage compared to multiple listeners.
-
-    Example:
 
 document.getElementById("parent").addEventListener("click", function(event) {
 if (event.target.tagName === "BUTTON") {
