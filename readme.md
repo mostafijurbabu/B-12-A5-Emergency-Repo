@@ -77,8 +77,6 @@ This will add a new <p> inside the #container.
 
 So, the event goes from the innermost element → outer elements.
 
-    Key points:
-
 (a) Default behavior in JavaScript events.
 
 (b) Can be controlled using event.stopPropagation().
