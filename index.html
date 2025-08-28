@@ -73,10 +73,12 @@
       <!-- card area -->
       <section
         id="emergency-container"
-        class="w-[1270px] mx-auto py-12 grid grid-cols-12 gap-10"
+        class="w-[1270px] mx-auto py-12 grid md:grid-cols-12 gap-10"
       >
         <section id="emergency-number" class="col-span-9">
-          <div class="bg-[#f5fff6] main-div grid grid-cols-3 gap-4">
+          <div
+            class="bg-[#f5fff6] main-div grid grid-col-1 md:grid-cols-3 gap-4"
+          >
             <!-- card-1 -->
             <div class="helpline-card bg-white p-3 shadow-xl rounded-xl">
               <div class="flex justify-between items-center">
@@ -419,7 +421,10 @@
             </div>
           </div>
         </section>
-        <aside id="history-box" class="col-span-3">
+        <aside
+          id="history-box"
+          class="col-span-3 bg-white shadow-xl rounded-xl p-4"
+        >
           <div class="flex justify-between items-center text-center mt-3">
             <h1 class="text-lg">
               <i class="fa-regular fa-clock mr-2"></i>Call History
@@ -430,7 +435,7 @@
               Clear
             </button>
           </div>
-          <div></div>
+          <div id="history-container"></div>
         </aside>
       </section>
     </main>
