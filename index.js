@@ -28,7 +28,7 @@ document.querySelectorAll(".call-btn").forEach((btn) => {
     let historyContainer = document.getElementById("history-container");
     let entry = document.createElement("div");
     entry.className =
-      "p-2 border rounded-md shadow-sm text-xs border-none font-semibold";
+      "p-2 border rounded-md shadow-sm text-xs mt-3 border-none font-semibold";
     entry.innerHTML = `
         <strong>${serviceName}</strong> - ${serviceNumber}
         <div class="text-sm text-gray-500">${timeString}</div>
