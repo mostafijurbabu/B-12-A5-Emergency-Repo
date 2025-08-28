@@ -109,7 +109,7 @@ Here, even if you add more buttons inside #parent, the single listener still wor
 5. preventDefault():
 
 The preventDefault() method prevents the default action of an event from happening.
-Example: Clicking a link (<a href="#">) normally redirects you to another page. Using preventDefault(), you can stop that redirection.
+Example: Clicking a link normally redirects you to another page. Using preventDefault(), you can stop that redirection.
 
 stopPropagation():
 
